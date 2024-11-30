@@ -34,7 +34,7 @@ export const fetchForecast = async (lat, lon, isImperial) => {
 }
 
 export const fetchSuggestions = async (search) => {
-    const api_url = `http://api.openweathermap.org/geo/1.0/direct?q=${search}&limit=5&appid=${import.meta.env.VITE_OPEN_WEATHER_API_KEY}`;
+    const api_url = `https://api.openweathermap.org/geo/1.0/direct?q=${search}&limit=5&appid=${import.meta.env.VITE_OPEN_WEATHER_API_KEY}`;
 
     try {
         const response = await fetch(api_url);
